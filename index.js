@@ -12,4 +12,7 @@ const filter = (query) => {
     return null; // TODO need create realization
 }
 
-module.exports = filter;
+module.exports = {
+    isString,
+    filter
+}
