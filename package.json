@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ximet/RxMonFilter/issues"
   },
-  "homepage": "https://github.com/ximet/RxMonFilter#readme"
+  "homepage": "https://github.com/ximet/RxMonFilter#readme",
+  "dependencies": {
+    "rxjs": "^5.5.6"
+  }
 }
