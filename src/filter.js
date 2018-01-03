@@ -1,4 +1,5 @@
 const { isString, isArray } = require('./helper.js');
+const Rx = require('rxjs/Rx');
 
 const filter = (array, query) => {
     if (!isArray(array)) {
@@ -8,9 +9,12 @@ const filter = (array, query) => {
 		throw new TypeError('Invalid query');
 	}
     const correctQuery = isString(query) ? JSON.parse(query) : query;
-
-    console.log(query);
-    return null; // TODO need create realization
+    const source = Rx.Observable.from(array);
+    const filtering = source.filter(item => item.age === 12); //TODO add predicate
+    const subscriber = filtering.subscribe(item => item);
+    const subscription = filtering.subscribe(item => { //TODO add return value
+        console.log(item)
+    });
 }
 
 module.exports = filter;
