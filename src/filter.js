@@ -1,4 +1,9 @@
-const filter = (query) => {
+const { isString, isArray } = require('./helper.js');
+
+const filter = (array, query) => {
+    if (!isArray(array)) {
+        throw new TypeError('Invalid array');
+    }
     if (!query) {
 		throw new TypeError('Invalid query');
 	}
