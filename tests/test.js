@@ -66,6 +66,7 @@ describe('filter test', function() {
             const query = {age:12};
             const ololo = filter(testValues, query);
             console.log('OLOLO:', ololo)
+                
             // expect().to.equal();
             
         });
