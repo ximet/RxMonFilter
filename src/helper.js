@@ -29,5 +29,5 @@ const LOGICS = {
 }
 
 module.exports = {
-    isString, isArray, isPrimitive, COMPARATORS
+    isString, isArray, isPrimitive, COMPARATORS, LOGICS
 }
