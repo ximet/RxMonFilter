@@ -4,7 +4,7 @@
   "description": "filter for json format ",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/ -s 0"
+    "test": "mocha tests/"
   },
   "repository": {
     "type": "git",

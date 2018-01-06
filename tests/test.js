@@ -36,7 +36,7 @@ describe('isString', function() {
 describe('filter test', function() {
     describe("Check simple filter", function() {
         it('should check simple filter by one value', function () {
-            const query = {age:12};
+            const query = {age:0};
             const ololo = filter(testValues, query);
             console.log('OLOLO:', ololo)
             // expect().to.equal();
@@ -46,7 +46,6 @@ describe('filter test', function() {
     describe("Check simple filter with standard", function() {
         it('should check simple filter by one value standard', function () {
             const ololo2 = testValues.filter(item => item.age === 12);
-            console.log('OLOLO:', ololo2)
 
         });
     });
